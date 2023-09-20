@@ -1,0 +1,34 @@
+.header {
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header>img {
+    width: 50px;
+    height: 50px;
+}
+
+.header>div>img{
+    height: 50px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+
+@media screen and (min-width: 1100px) {
+}
