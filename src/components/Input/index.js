@@ -4,13 +4,25 @@ import { useState } from "react";
 export default function Input(props) {
   // Destructuring
 
-  const { hasCPf, setHasCPF, placeholder, isUserFound, setIsUserFound } = props;
+  const {
+    hasCPf,
+    setHasCPF,
+    placeholder,
+    isUserFound,
+    setIsUserFound,
+    selectedUser,
+    setSelectedUser,
+    hasSelectedUser,
+    setHasSelectedUser,
+  } = props;
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
     const value = e.target.value.replace(/\D/g, ""); // Remove todos os não dígitos
     console.log(value);
     if (value.length <= 11) {
+      setSelectedUser({});
+      setHasSelectedUser(false);
       setIsUserFound(false);
       setHasCPF(false);
       // Formate o CPF
@@ -29,7 +41,7 @@ export default function Input(props) {
   };
 
   return (
-    <>
+    <div className="input-container">
       <label name="input">CPF:</label>
       <input
         id="input"
@@ -39,6 +51,6 @@ export default function Input(props) {
         onChange={handleInputChange}
         value={inputValue}
       />
-    </>
+    </div>
   );
 }

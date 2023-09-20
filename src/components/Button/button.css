@@ -8,3 +8,19 @@
     text-transform: uppercase;
     box-shadow: 0 0 5px black;
 }
+
+.btn a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: no-drop;
+}
+
+.btn:disabled a {
+    color: grey;
+    cursor: no-drop;
+}

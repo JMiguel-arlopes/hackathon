@@ -13,9 +13,10 @@
     font-size: 26px;
     text-align: start;
     text-transform: capitalize;
-    border-bottom: 1px solid black;
-    margin: 0 auto 10px;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
     width: 100%;
+    color: white;
 }
 
 .box {
@@ -33,9 +34,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
-.box div:not(:last-child){
+.box div:not(:last-child) {
     border-bottom: 1px solid black;
 }
 

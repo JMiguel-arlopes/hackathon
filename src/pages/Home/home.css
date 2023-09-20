@@ -1,15 +1,16 @@
-.paragrath {
+.paragraph {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: .8px;
     text-align: start;
-    margin: 24px 0;
+    padding: 24px 0;
+    color: white;
 }
 
 .container-principal {
-    padding: 0 1.25rem;
     min-height: 100vh;
     background-image: url(../../../public/assets/fundo-mobile.png);
     background-position: center;
     background-size: cover;
+    padding: 0 20px;
 }

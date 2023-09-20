@@ -5,7 +5,9 @@ export default function Button(props) {
   return (
     <>
       <button className="btn" disabled={!hasSelectedUser}>
-        {text}
+        <a href={hasSelectedUser ? "/registry" : "#"} alt="registry">
+          {text}
+        </a>
       </button>
     </>
   );

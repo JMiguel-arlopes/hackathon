@@ -6,13 +6,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Registry from "./pages/Registry";
 
 export default function App() {
-  const listagem = [
-    { name: "vitor", token: 7 },
-    { name: "victor", token: 9 },
-    { name: "david", token: 12 },
-    { name: "rafael", token: 4 },
-  ];
-
   const router = createBrowserRouter([
     {
       path: "/",
@@ -20,14 +13,7 @@ export default function App() {
     },
     {
       path: "/registry",
-      element: (
-        <Registry
-          name="jotajota"
-          total="60"
-          numToken="15"
-          perfilList={listagem}
-        />
-      ),
+      element: <Registry />,
     },
   ]);
 

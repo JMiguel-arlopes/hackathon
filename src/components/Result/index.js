@@ -9,7 +9,17 @@ export default function Result(props) {
 
       <div className="box">
         {result.map((person) => (
-          <div onClick={() => handleSelectUser(person.name, person.CPF)}>
+          <div
+            onClick={() =>
+              handleSelectUser(
+                person.name,
+                person.CPF,
+                person.numToken,
+                person.total,
+                person.network
+              )
+            }
+          >
             {selectedUser.CPF === person.CPF ? (
               <img src="assets/checked.png" width={25} height={25} />
             ) : null}
